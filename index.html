@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alen | Unity Developer Portfolio</title>
+    <title>Alen Joseph | Unity Developer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600;700&display=swap');
 
         :root {
-            /* Unity Dark Theme inspired colors */
             --primary: #222c37; 
-            --accent: #00FFFF; /* Cyan for high contrast */
-            --unity-gray: #303030;
+            --accent: #00FFFF;
             --text-light: #d1d5db;
         }
 
@@ -28,11 +26,8 @@
             font-family: 'Press Start 2P', cursive;
         }
 
-        /* Glitch Effect - Cyan Style */
-        .glitch-wrapper {
-            position: relative;
-        }
-        
+        /* Glitch Effect */
+        .glitch-wrapper { position: relative; }
         .glitch {
             position: relative;
             color: white;
@@ -44,9 +39,7 @@
             animation: glitch-anim 2.5s infinite linear alternate-reverse;
         }
 
-        @media (max-width: 640px) {
-            .glitch { font-size: 1.8rem; }
-        }
+        @media (max-width: 640px) { .glitch { font-size: 1.8rem; } }
 
         @keyframes glitch-anim {
             0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; transform: translate(0); }
@@ -56,22 +49,13 @@
             100% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; transform: translate(0); }
         }
 
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        ::-webkit-scrollbar-track {
-            background: #0a0a0a;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #4b5563;
-            border-radius: 4px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #00ffff;
-        }
+        /* Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #0a0a0a; }
+        ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00ffff; }
 
-        /* Project Card Hover */
+        /* Project Card */
         .project-card {
             transition: all 0.3s ease;
             border: 1px solid #333;
@@ -83,23 +67,15 @@
         }
 
         /* Skill Bar Animation */
-        @keyframes fillBar {
-            from { width: 0; }
-            to { width: var(--width); }
-        }
-        .skill-fill.animate {
-            animation: fillBar 1.5s ease-out forwards;
-        }
+        @keyframes fillBar { from { width: 0; } to { width: var(--width); } }
+        .skill-fill.animate { animation: fillBar 1.5s ease-out forwards; }
 
-        /* CRT Scanline Effect Overlay (Subtle) */
+        /* CRT Overlay */
         .crt::before {
             content: " ";
             display: block;
             position: fixed;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
+            top: 0; left: 0; bottom: 0; right: 0;
             background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
             z-index: 50;
             background-size: 100% 2px, 3px 100%;
@@ -124,7 +100,7 @@
                         <a href="#home" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-lg font-medium transition-colors">Base</a>
                         <a href="#projects" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-lg font-medium transition-colors">Projects</a>
                         <a href="#skills" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-lg font-medium transition-colors">Skills</a>
-                        <a href="#contact" class="px-4 py-2 rounded border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition-colors duration-300 font-bold">Start Game</a>
+                        <a href="#contact" class="px-4 py-2 rounded border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black transition-colors duration-300 font-bold">Contact</a>
                     </div>
                 </div>
                 <div class="-mr-2 flex md:hidden">
@@ -148,7 +124,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="relative h-screen flex items-center justify-center pt-16 overflow-hidden">
-        <!-- Background Grid -->
         <div class="absolute inset-0 z-0 opacity-10" 
              style="background-image: linear-gradient(#4b5563 1px, transparent 1px), linear-gradient(90deg, #4b5563 1px, transparent 1px); 
                     background-size: 40px 40px; 
@@ -161,17 +136,17 @@
                 <i class="fa-brands fa-unity mr-2"></i> UNITY DEVELOPER
             </div>
             <div class="glitch-wrapper mb-6">
-                <h1 class="glitch" data-text="I MAKE GAMES">I MAKE GAMES</h1>
+                <h1 class="glitch" data-text="ALEN JOSEPH">ALEN JOSEPH</h1>
             </div>
             <p class="text-gray-400 text-xl md:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed font-light">
-                Hi, I'm <span class="text-white font-bold">Alen</span>. I turn code into gameplay using <span class="text-cyan-400 font-bold">C#</span> and <span class="text-cyan-400 font-bold">Unity</span>.
+                Specializing in <span class="text-cyan-400 font-bold">VR</span>, <span class="text-cyan-400 font-bold">AR</span>, and <span class="text-cyan-400 font-bold">3D Gameplay</span> experiences.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <a href="#projects" class="px-8 py-3 bg-cyan-600 hover:bg-cyan-500 text-black font-bold uppercase tracking-widest transition-colors flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(6,182,212,0.5)]">
-                    View Portfolio
+                    See Work
                 </a>
-                <a href="https://github.com" target="_blank" class="px-8 py-3 bg-gray-800 hover:bg-gray-700 text-white font-bold uppercase tracking-widest transition-colors flex items-center justify-center gap-2 border border-gray-600">
-                    <i class="fa-brands fa-github"></i> GitHub
+                <a href="https://www.linkedin.com/in/alen-joseph-535862297/" target="_blank" class="px-8 py-3 bg-[#0077b5] hover:bg-[#006097] text-white font-bold uppercase tracking-widest transition-colors flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
                 </a>
             </div>
         </div>
@@ -181,92 +156,89 @@
     <section id="projects" class="py-20 bg-[#0e0e0e] relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Selected Works</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">My Projects</h2>
                 <div class="h-1 w-20 bg-cyan-600 mx-auto"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: High Fidelity Unity -->
+            <!-- Changed to grid-cols-2 for 2x2 layout -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Project 1: VR CRICKET -->
                 <article class="project-card bg-[#1a1a1a] rounded-lg overflow-hidden group">
                     <div class="h-48 bg-gray-800 relative overflow-hidden flex items-center justify-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 z-10"></div>
-                        <!-- Icon Placeholder -->
-                        <i class="fa-solid fa-gamepad text-6xl text-cyan-600 group-hover:scale-110 transition-transform duration-500"></i>
-                        <div class="absolute top-2 right-2 bg-black/80 text-cyan-400 border border-cyan-600 text-xs px-2 py-1 rounded font-bold z-20">3D ACTION</div>
+                        <i class="fa-solid fa-vr-cardboard text-6xl text-cyan-600 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute top-2 right-2 bg-black/80 text-cyan-400 border border-cyan-600 text-xs px-2 py-1 rounded font-bold z-20">VR / OCULUS</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Cyber Slash</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">VR Cricket</h3>
                         <p class="text-gray-400 text-sm mb-4 h-20 overflow-hidden">
-                            Third-person character controller with combo system. Features custom state machine for player movement and enemy AI.
+                            Immersive sports simulation built for VR headsets. Features realistic batting physics, spatial audio crowds, and motion controller integration.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Cinemachine</span>
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">New Input System</span>
-                        </div>
-                        <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
-                            <a href="#" class="text-white hover:text-cyan-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-brands fa-itch-io"></i> PLAY
-                            </a>
-                            <a href="#" class="text-white hover:text-cyan-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-brands fa-github"></i> SRC
-                            </a>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">XR Interaction Toolkit</span>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Physics</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 2: Unity 2D -->
+                <!-- Project 2: NEXUS RUSH -->
                 <article class="project-card bg-[#1a1a1a] rounded-lg overflow-hidden group">
                     <div class="h-48 bg-gray-800 relative overflow-hidden flex items-center justify-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 z-10"></div>
-                        <i class="fa-solid fa-dungeon text-6xl text-purple-500 group-hover:rotate-12 transition-transform duration-500"></i>
-                        <div class="absolute top-2 right-2 bg-black/80 text-purple-400 border border-purple-600 text-xs px-2 py-1 rounded font-bold z-20">2D PLATFORMER</div>
+                        <i class="fa-solid fa-car-side text-6xl text-purple-500 group-hover:skew-x-12 transition-transform duration-500"></i>
+                        <div class="absolute top-2 right-2 bg-black/80 text-purple-400 border border-purple-600 text-xs px-2 py-1 rounded font-bold z-20">RACING</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Pixel Quest</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">Nexus Rush</h3>
                         <p class="text-gray-400 text-sm mb-4 h-20 overflow-hidden">
-                            Metroidvania style platformer utilizing Unity Tilemaps and 2D Lights. Includes inventory system and save/load functionality.
+                            High-octane car racing game. Implemented custom arcade vehicle physics, drifting mechanics, post-processing speed effects, and AI racers.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Tilemaps</span>
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">ScriptableObjects</span>
-                        </div>
-                        <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
-                            <a href="#" class="text-white hover:text-purple-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-solid fa-play"></i> DEMO
-                            </a>
-                            <a href="#" class="text-white hover:text-purple-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-brands fa-github"></i> SRC
-                            </a>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Wheel Colliders</span>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">AI Navigation</span>
                         </div>
                     </div>
                 </article>
 
-                <!-- Project 3: Mobile/UI -->
+                <!-- Project 3: ZOMBIE SHOOTER -->
                 <article class="project-card bg-[#1a1a1a] rounded-lg overflow-hidden group">
                     <div class="h-48 bg-gray-800 relative overflow-hidden flex items-center justify-center">
                         <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 z-10"></div>
-                        <i class="fa-solid fa-mobile-screen text-6xl text-yellow-500 group-hover:scale-110 transition-transform duration-500"></i>
-                        <div class="absolute top-2 right-2 bg-black/80 text-yellow-400 border border-yellow-600 text-xs px-2 py-1 rounded font-bold z-20">MOBILE</div>
+                        <i class="fa-solid fa-biohazard text-6xl text-green-600 group-hover:rotate-12 transition-transform duration-500"></i>
+                        <div class="absolute top-2 right-2 bg-black/80 text-green-400 border border-green-600 text-xs px-2 py-1 rounded font-bold z-20">FPS SURVIVAL</div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">Puzzle Stack</h3>
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-green-400 transition-colors">Zombie Shooter</h3>
                         <p class="text-gray-400 text-sm mb-4 h-20 overflow-hidden">
-                            Optimized mobile puzzle game. Focused on object pooling for performance and DOTween for smooth UI animations.
+                            Wave-based survival shooter. Includes advanced NavMesh enemy AI, animation rigging for weapon handling, and particle blood effects.
                         </p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Optimization</span>
-                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">DOTween</span>
-                        </div>
-                        <div class="flex justify-between items-center mt-4 border-t border-gray-800 pt-4">
-                            <a href="#" class="text-white hover:text-yellow-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-brands fa-google-play"></i> STORE
-                            </a>
-                            <a href="#" class="text-white hover:text-yellow-400 text-sm font-semibold flex items-center gap-2">
-                                <i class="fa-brands fa-github"></i> SRC
-                            </a>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">NavMesh</span>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Animation Rigging</span>
                         </div>
                     </div>
                 </article>
+
+                <!-- Project 4: AR APPS -->
+                <article class="project-card bg-[#1a1a1a] rounded-lg overflow-hidden group">
+                    <div class="h-48 bg-gray-800 relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-90 z-10"></div>
+                        <i class="fa-solid fa-mobile-screen-button text-6xl text-yellow-500 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute top-2 right-2 bg-black/80 text-yellow-400 border border-yellow-600 text-xs px-2 py-1 rounded font-bold z-20">AUGMENTED REALITY</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-yellow-400 transition-colors">AR Applications</h3>
+                        <p class="text-gray-400 text-sm mb-4 h-20 overflow-hidden">
+                            A suite of AR experiences developed for mobile. Includes plane detection, image tracking, and real-world object placement.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">AR Foundation</span>
+                            <span class="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded border border-gray-700">Vuforia</span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -297,20 +269,20 @@
                         </div>
                         <div>
                             <div class="flex justify-between mb-1">
-                                <span class="text-gray-300 font-medium">Physics & Collisions</span>
-                                <span class="text-cyan-400 font-bold">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-cyan-500 h-2 rounded-full skill-fill" style="--width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-300 font-medium">UI Implementation (UGUI/Toolkit)</span>
+                                <span class="text-gray-300 font-medium">Unity Physics</span>
                                 <span class="text-cyan-400 font-bold">90%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
                                 <div class="bg-cyan-500 h-2 rounded-full skill-fill" style="--width: 90%"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-gray-300 font-medium">VR/AR Development</span>
+                                <span class="text-cyan-400 font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-2">
+                                <div class="bg-cyan-500 h-2 rounded-full skill-fill" style="--width: 85%"></div>
                             </div>
                         </div>
                     </div>
@@ -322,12 +294,12 @@
                         <i class="fa-solid fa-screwdriver-wrench text-cyan-500 mr-3"></i> Unity Packages
                     </h3>
                     <div class="flex flex-wrap gap-3">
+                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">XR Interaction Toolkit</span>
+                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">AR Foundation</span>
+                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">Vuforia</span>
                         <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">Cinemachine</span>
                         <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">New Input System</span>
-                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">Shader Graph</span>
-                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">ProBuilder</span>
-                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">Addressables</span>
-                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">DOTween</span>
+                        <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">NavMesh</span>
                         <span class="px-3 py-2 bg-gray-800 border border-gray-700 text-gray-200 rounded text-sm font-semibold hover:border-cyan-500 hover:text-cyan-400 transition-colors">Git/GitHub</span>
                     </div>
                 </div>
@@ -338,14 +310,14 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-gradient-to-b from-black to-[#0a0a0a] relative border-t border-gray-900">
         <div class="max-w-3xl mx-auto px-4 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Create</h2>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Let's Connect</h2>
             <p class="text-gray-400 text-lg mb-10">
-                Alen | Unity Developer<br>
-                Open to freelance and collaborative work.
+                Alen Joseph | Unity Developer<br>
+                Open to opportunities in VR, AR, and Game Development.
             </p>
             
             <div class="bg-[#151515] p-8 rounded-lg border border-gray-800 shadow-lg text-left">
-                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thanks for the message!');">
+                <form class="space-y-6" onsubmit="event.preventDefault(); alert('Message simulation: Sent!');">
                     <div>
                         <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
                         <input type="email" id="email" class="mt-1 block w-full bg-black border border-gray-700 rounded-md text-white py-3 px-4 focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500" placeholder="recruiter@studio.com">
@@ -355,15 +327,22 @@
                         <textarea id="message" rows="4" class="mt-1 block w-full bg-black border border-gray-700 rounded-md text-white py-3 px-4 focus:outline-none focus:ring-1 focus:ring-cyan-500 focus:border-cyan-500" placeholder="Hi Alen, I saw your portfolio..."></textarea>
                     </div>
                     <button type="submit" class="w-full bg-cyan-700 hover:bg-cyan-600 text-white font-bold py-3 px-4 rounded transition duration-300 ease-in-out">
-                        SEND
+                        SEND MESSAGE
                     </button>
                 </form>
             </div>
             
             <div class="mt-12 flex justify-center space-x-8">
-                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors"><i class="fa-brands fa-linkedin text-3xl"></i></a>
-                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors"><i class="fa-brands fa-github text-3xl"></i></a>
-                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors"><i class="fa-brands fa-itch-io text-3xl"></i></a>
+                <!-- LinkedIn Updated -->
+                <a href="https://www.linkedin.com/in/alen-joseph-535862297/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-linkedin text-4xl"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-github text-4xl"></i>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-cyan-400 transition-colors transform hover:scale-110">
+                    <i class="fa-brands fa-itch-io text-4xl"></i>
+                </a>
             </div>
         </div>
     </section>
@@ -390,11 +369,11 @@
             observer.observe(el);
         });
 
-        // Smooth Scroll for anchor links
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                menu.classList.add('hidden'); // Close mobile menu if open
+                menu.classList.add('hidden');
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
